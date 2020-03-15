@@ -20,6 +20,8 @@ change permissions with:
 
 CRON is a script scheduler for Unix. It can be used to make a task run periodically automatically.
 
+# TODO: does not work because some bug with crontab and file paths, easy fix
+
 ### Set Up Cron
 * `crontab -e`
 * Add to crontab file to run once every hour
