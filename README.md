@@ -30,7 +30,7 @@ CRON is a script scheduler for Unix. It can be used to make a task run periodica
 * Add to crontab file to run once every hour
 
 ```
- */1 * * * * <path_to_repo>/change_background_scripts/change_background.sh >> <path_to_repo>/change_background_scripts/store.txt 2>&1
+ 0 * * * * <path_to_repo>/change_background_scripts/change_background.sh >> <path_to_repo>/change_background_scripts/store.txt 2>&1
 ```
 
 ### Trouble-Shooting
