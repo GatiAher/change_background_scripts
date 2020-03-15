@@ -22,7 +22,7 @@ try:
 
 except Exception as e:
 	print(e)
-	image_path = "/home/gaher/Pictures/Wallpapers/belladona.jpg"
+	image_path = "./default.jpg"
 
 finally:
 	print(image_path)
