@@ -14,7 +14,7 @@ change permissions with:
 * `chmod +x _get_online_image_space_themed.py`
 
 ## Run From Command-Line
-* `change_background.sh`
+* `<path_to_repo>/change_background.sh`
 
 ## Run From Cron
 
@@ -25,7 +25,7 @@ CRON is a script scheduler for Unix. It can be used to make a task run periodica
 * Add to crontab file to run once every hour
 
 ```
-* 1 * * * <path_to_repo_>/change_background.sh
+* 1 * * * <path_to_repo>/change_background.sh
 ```
 
 ### Trouble-Shooting
@@ -35,3 +35,4 @@ CRON is a script scheduler for Unix. It can be used to make a task run periodica
 ```
 PATH=/usr/bin:/bin:/<path_to_repo>
 ```
+cron keeps its own list of directories to check to find the command

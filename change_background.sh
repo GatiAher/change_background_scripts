@@ -7,7 +7,8 @@ export DBUS_SESSION_BUS_ADDRESS=$address
 
 # set random image as background
 
-output=$(python3 ./_get_online_image_space_themed.py)
+DIR="$(cd "$(dirname "$0")" && pwd)"
+output=$(python3 $DIR/_get_online_image_space_themed.py)
 
 gsettings set org.gnome.desktop.background picture-uri $output
 gsettings set org.gnome.desktop.background picture-options 'zoom'
