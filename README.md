@@ -1,4 +1,4 @@
-# Change Background Script
+# Change Background Scripts
 
 Script to change wallpaper to random picture from https://apod.nasa.gov (astronomy picture of the day). Uses python3, bash. Can use cron to change wallpaper every hour.
 

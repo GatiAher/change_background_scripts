@@ -17,3 +17,5 @@ gsettings set org.gnome.desktop.background picture-options 'zoom'
 # gsettings set org.gnome.desktop.background primary-color '#ff6200'
 # gsettings set org.gnome.desktop.background secondary-color '#5883f3'
 # gsettings set org.gnome.desktop.background color-shading-type 'vertical'
+
+echo changed background to $output
