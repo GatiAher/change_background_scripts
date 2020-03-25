@@ -4,20 +4,33 @@ Script to change wallpaper to random picture from https://apod.nasa.gov (astrono
 
 ## Requirements
 * Linux os, bash and python3
-* `pip3 install requests beautifulsoup4 lxml`
 
 ## Set-Up
-* make sure both `change_background.sh` and `_get_online_image_space_themed.py` are executable
+
+make sure both `change_background.sh` and `_get_online_image_space_themed.py` are executable
 
 change permissions with:
-* `chmod +x change_background.sh`
+* `$ chmod +x change_background.sh`
+* `$ chmod +x _get_online_image_space_themed.py`
 
-* `chmod +x _get_online_image_space_themed.py`
+#### If you are using pipenv to manage python virtual environment:
+
+* `$ cd <path to repo>`
+* `$ pipenv install`
+* find *your* path to pipenv by using `$ which pipenv`
+* make sure `change_background.sh` is using *your* path to pipenv
+
+#### Else:
+
+**Warning**: *this installs python packages to your user. Using a virtual environment is better practice!*
+* `$ pip3 install requests beautifulsoup4 lxml`
+* in `change_background.sh`, comment the lines under "pipenv version", uncomment the line under "not pipenv version"
 
 ## Run From Command-Line
-* `<path_to_repo>/change_background_scripts/change_background.sh`
+* `$ <path_to_repo>/change_background_scripts/change_background.sh`
 
-* `<path_to_repo>/change_background_scripts/change_background.sh >>
+To store output in a text file:
+* `$ <path_to_repo>/change_background_scripts/change_background.sh >>
  <path_to_repo>/change_background_scripts/store.txt 2>&1`
 
 ## Run From Cron
