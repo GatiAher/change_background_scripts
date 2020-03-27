@@ -7,11 +7,13 @@ Script to change wallpaper to random picture from https://apod.nasa.gov (astrono
 
 ## Set-Up
 
-make sure both `change_background.sh` and `_get_online_image_space_themed.py` are executable
+1. make sure both `change_background.sh` and `_get_online_image_space_themed.py` are executable
 
 change permissions with:
 * `$ chmod +x change_background.sh`
 * `$ chmod +x _get_online_image_space_themed.py`
+
+2. make sure `_get_online_image_space_themed.py` is using your absolute path to your default image
 
 #### If you are using pipenv to manage python virtual environment:
 

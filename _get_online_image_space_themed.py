@@ -20,9 +20,9 @@ try:
 	i_p = soup.find('img').get('src')
 	image_path = "https://apod.nasa.gov/apod/" + i_p
 
-except Exception as e:
-	print(e)
-	image_path = "./default.jpg"
+except:
+	# print(e)
+	image_path = "/home/gaher/bin/change_background_scripts/default.jpg"
 
 finally:
 	print(image_path)
